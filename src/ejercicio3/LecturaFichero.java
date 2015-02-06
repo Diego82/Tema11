@@ -1,21 +1,19 @@
 package ejercicio3;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class LecturaFichero {
 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		String texto = in.next();
-		StringBuilder lista = new StringBuilder();
-		int contador = 0;
+	public static void main(String[] args)throws FileNotFoundException {
+		Scanner in = new Scanner(new File("nombres_mujer.txt"));
+		List<String> lista = new ArrayList<String>();
 		System.out.println("Inicia programa");
-		while(true){
-			lista.append(in.next());
-			contador++;
-			if(contador>10){
-				break;
-			}
+		while(in.hasNext()){
+			lista.add(in.next());
 		}
 		in.close();
 		System.out.println(lista);

@@ -1,4 +1,4 @@
-package Ejercicio2;
+package ejercicio2;
 
 public class ClaveSegura {
 	private String clave;

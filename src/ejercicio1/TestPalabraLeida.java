@@ -1,10 +1,11 @@
-package Ejercicio1;
+package ejercicio1;
 
 import java.util.Scanner;
 
 public class TestPalabraLeida {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		//Pasamos nuestra palabra mediante el Scanner
 		Scanner in = new Scanner(System.in);
 		String palabra = in.next();		

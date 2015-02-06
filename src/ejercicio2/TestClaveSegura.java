@@ -1,11 +1,9 @@
-package Ejercicio2;
+package ejercicio2;
 
 public class TestClaveSegura {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		 
 		final String caracteres = "aAbBcCdDeEfFgGhHiIjJkK0123456789¿?()=@.:,;!¡&{}lLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789¿?()=@.:,;!¡&{}";
 		StringBuilder clave = new StringBuilder();
 		ClaveSegura claveSegura = new ClaveSegura(null);
@@ -28,8 +26,6 @@ public class TestClaveSegura {
 		claveSegura.setClave(clave.toString());
 		System.out.println("Clave segura generada es: "+claveSegura.getClave());
 		System.out.println("contador: "+contador);
-		
-		
 	}
 
 }

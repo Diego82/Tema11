@@ -1,14 +1,8 @@
-package Ejercicio1;
+package ejercicio1;
 
-/**
- * Ejercicio 1
- * @author Diego Jesus Torres Peinado
- * @version 1.0
- */
 public class PalabraLeida {
 	//Atributo
 	private String valor;
-
 	/**
 	 * @param valor
 	 */
@@ -54,4 +48,3 @@ public class PalabraLeida {
 		return this.valor.toLowerCase().equalsIgnoreCase(palabra);
 	}
 }
-
