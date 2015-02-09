@@ -16,8 +16,6 @@ public class TestConstitucion {
 	public static void main(String[] args) throws FileNotFoundException {
 		//Declaracion de los ArrayList
 		List<String> listaConstitucion = new ArrayList<String>();
-		//List<String> palabrasConSignosDePuntuacionDelante = new ArrayList<String>();
-		//List<String> palabrasConSignosDePuntuacionDetras = new ArrayList<String>();
 		StringBuilder lista500palabras = new StringBuilder();
 		Scanner in = new Scanner(new File("constitucion.txt"));
 
@@ -65,6 +63,7 @@ public class TestConstitucion {
 			lista500palabras.append(listaConstitucion.get(aleatorio)+" ");
 		}
 		System.out.println(lista500palabras);
+		
 		
 	}
 }
