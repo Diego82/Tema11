@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 /**
  * Programa que recoge todas las palabras que hay en la constitucion
- * @author Diego Jesús Torres Peinado.
+ * @author Diego Jesús Torres Peinado
  * @version 1.0
  */
 
