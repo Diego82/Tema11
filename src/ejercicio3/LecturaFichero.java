@@ -82,7 +82,7 @@ public class LecturaFichero {
 		else {
 			//Con este bucle añadimos los nombres que empiezan por vocal a nuestra lista
 			for (int i = 0; i < lista.size(); i++) {
-				if (lista.get(i).toLowerCase().matches("^[a].*")) {
+				if (lista.get(i).matches("^[a].*")) {
 					listaNombresEmpiezanPorA.add(lista.get(i));
 				}
 			}
@@ -91,7 +91,7 @@ public class LecturaFichero {
 			
 			//En este bucle añadimos los nombres que no terminan en vocal
 			for (int i = 0; i < lista.size(); i++) {
-				if (!(lista.get(i).toLowerCase().matches(".*[aeiouy]$"))) {
+				if (!(lista.get(i).matches(".*[aeiouy]$"))) {
 					listaNombresNoTerminanEnVocal.add(lista.get(i));
 				}
 			}

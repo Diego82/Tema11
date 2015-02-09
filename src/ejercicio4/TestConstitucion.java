@@ -32,16 +32,17 @@ public class TestConstitucion {
 		//En este bucle quitamos los signos de puntuacion a las palabras
 		//y las añadimos a la lista
 		for (int i = 0; i < listaConstitucion.size(); i++) {
-			if (listaConstitucion.get(i).matches(".*[.,:;\")-]$")) {				
-				StringBuilder aux = new StringBuilder(listaConstitucion.get(i));
-				listaConstitucion.add(aux.reverse().deleteCharAt(0).reverse().toString());
+			if (listaConstitucion.get(i).matches(".*[\\p{Punct}]$")) {				
+				String aux = listaConstitucion.get(i).substring(0, (listaConstitucion.get(i).length()-1));
+				listaConstitucion.remove(i);
+				listaConstitucion.add(i, aux);
 			}
-			if (listaConstitucion.get(i).matches("^[.,:;\")-].*")) {
+			if (listaConstitucion.get(i).matches("^[\\p{Punct}].*")) {
 				StringBuilder aux = new StringBuilder(listaConstitucion.get(i));
 				listaConstitucion.add(aux.deleteCharAt(0).toString());
 			}
 		}
-
+/*
 		//En este otro eliminamos las palabras que estaban con los signos de puntuacion
 		//y que previamente hemos eliminado en el bucle anterior
 		for (int i = 0; i < listaConstitucion.size(); i++) {
@@ -52,10 +53,10 @@ public class TestConstitucion {
 				listaConstitucion.remove(i);
 				
 			}
-		}
+		}*/
 
 		System.out.println("Numero de palabras que tiene la constitucion despues del cambio: "+listaConstitucion.size());
-		System.out.println("Palabras que tiene la constitucion: "+listaConstitucion);
+		System.out.println("Palabras que tiene la constitucion despues de limpiar signos: "+listaConstitucion);
 		
 		//Ahora guardamos 500 palabras aleatoriamente en nuestro StringBuilder 
 		for (int i = 0; i < 500; i++) {
