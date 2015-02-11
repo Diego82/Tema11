@@ -4,20 +4,19 @@ public class UtilidadesString {
 	/**
 	 * Constantes del metodo
 	 */
-	public static final String[] PREPOSICIONES = { "a", "ante", "bajo", "cabe", "con", "contra", "de", "desde", "en", "entre", "hacia", "hasta", "para", "por", "según", "sin", "sobre", "tras" };
+	public static final String[] PREPOSICIONES = { "a", "ante", "bajo", "cabe", "con", "contra", "de", "desde", "durante", "en", "entre", "hacia", "hasta", "para", "por", "según", "sin", "so", "sobre", "tras" };
 	public static final String[] ARTICULOS_DETERMINADOS = { "el", "la", "los", "las" };
 	public static final String[] ARTICULOS_INDETERMINADOS = { "un", "una", "unos", "unas" };
 
 	//Metodos
 	/**
 	 * 
-	 * @param Recibe el texto de la constitucion en un String
-	 * @return retorna el numero de palabras que contiene el texto
+	 * @param frase
+	 * @return numero de palabras que contiene el texto
 	 */
 	
 	public static int numeroDePalabras(String frase){
-		String[] array = frase.split(" ");
-		return array.length;
+		return frase.split(" ").length;
 	}
 	/**
 	 * 
@@ -68,6 +67,6 @@ public class UtilidadesString {
 		return contador;
 	}
 	public static String devolverMayuscula(int inicio, int fin, String frase){
-		return new StringBuilder(frase.substring(inicio, fin).toUpperCase()).toString();
+		return frase.substring(inicio, fin).toUpperCase();
 	}
 }
