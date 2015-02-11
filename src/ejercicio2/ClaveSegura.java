@@ -1,24 +1,27 @@
 package ejercicio2;
 
+
 public class ClaveSegura {
+	//Atributo de la clcase
 	private String clave;
 
 	/**
-	 * @param clave
+	 * Constructor
+	 * @param recibe un String con la palabra clave que queremos que forme
 	 */
 	public ClaveSegura(String clave) {
 		this.clave = clave;
 	}
 
 	/**
-	 * @return the clave
+	 * @return devuelve el valor de la clave
 	 */
 	public String getClave() {
 		return clave;
 	}
 
 	/**
-	 * @param clave the clave to set
+	 * @param Carga la clave que queremos asignar
 	 */
 	public void setClave(String clave) {
 		this.clave = clave;
